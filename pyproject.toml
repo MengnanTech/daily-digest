@@ -1,0 +1,16 @@
+[project]
+name = "daily-digest"
+version = "0.1.0"
+description = "每日科技热点聚合器 - AI驱动的多源新闻摘要"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx[http2,socks]>=0.27",
+    "feedparser>=6.0",
+    "beautifulsoup4>=4.12",
+    "readability-lxml>=0.8",
+    "lxml>=5.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+daily-digest = "daily_run:main"
