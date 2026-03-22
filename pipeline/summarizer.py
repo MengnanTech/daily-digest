@@ -27,8 +27,8 @@ USER_PROMPT_TEMPLATE = """请为以下 {count} 篇文章生成摘要和分类标
 只输出 JSON，不要其他文字。"""
 
 
-async def summarize_articles(articles: list[dict]) -> list[dict]:
-    """为文章列表生成 AI 摘要"""
+async def summarize_articles(articles: list[dict], batch_size: int = 20) -> list[dict]:
+    """为文章列表生成 AI 摘要（分批处理，每批 20 条）"""
     if not DEEPSEEK_API_KEY:
         print("⚠️ 未设置 DEEPSEEK_API_KEY，跳过 AI 摘要")
         for a in articles:
@@ -36,13 +36,27 @@ async def summarize_articles(articles: list[dict]) -> list[dict]:
             a["category"] = "行业动态"
         return articles
 
-    # 构建文章列表文本
+    # 分批处理
+    total_batches = (len(articles) + batch_size - 1) // batch_size
+    for batch_idx in range(total_batches):
+        start = batch_idx * batch_size
+        end = min(start + batch_size, len(articles))
+        batch = articles[start:end]
+
+        print(f"  📝 摘要批次 {batch_idx + 1}/{total_batches}（{len(batch)} 条）...")
+        await _summarize_batch(batch, start)
+
+    return articles
+
+
+async def _summarize_batch(batch: list[dict], offset: int):
+    """处理一批文章的 AI 摘要"""
     articles_text = "\n\n".join([
-        f"[{i}] 标题: {a.get('title', '')}\n来源: {a.get('source', '')}\n内容: {a.get('content', '')[:500]}"
-        for i, a in enumerate(articles)
+        f"[{i}] 标题: {a.get('title', '')}\n来源: {a.get('source', '')}\n内容: {a.get('content', '')[:300]}"
+        for i, a in enumerate(batch)
     ])
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(proxy=None) as client:
         try:
             r = await client.post(
                 DEEPSEEK_API,
@@ -55,19 +69,18 @@ async def summarize_articles(articles: list[dict]) -> list[dict]:
                     "messages": [
                         {"role": "system", "content": SYSTEM_PROMPT},
                         {"role": "user", "content": USER_PROMPT_TEMPLATE.format(
-                            count=len(articles),
+                            count=len(batch),
                             articles=articles_text,
                         )},
                     ],
                     "temperature": 0.3,
                     "max_tokens": 4000,
                 },
-                timeout=60,
+                timeout=120,
             )
             r.raise_for_status()
 
             content = r.json()["choices"][0]["message"]["content"]
-            # 提取 JSON（可能被包裹在 ```json ``` 中）
             content = content.strip()
             if content.startswith("```"):
                 content = content.split("\n", 1)[1]
@@ -75,19 +88,15 @@ async def summarize_articles(articles: list[dict]) -> list[dict]:
 
             summaries = json.loads(content)
 
-            # 合并摘要到文章数据中
             for item in summaries:
                 idx = item.get("index", -1)
-                if 0 <= idx < len(articles):
-                    articles[idx]["summary"] = item.get("summary", "")
-                    articles[idx]["category"] = item.get("category", "行业动态")
+                if 0 <= idx < len(batch):
+                    batch[idx]["summary"] = item.get("summary", "")
+                    batch[idx]["category"] = item.get("category", "行业动态")
 
         except Exception as e:
-            print(f"⚠️ AI 摘要生成失败: {e}")
-            # 降级：使用内容前 80 字作为摘要
-            for a in articles:
+            print(f"  ⚠️ 批次摘要失败: {e}")
+            for a in batch:
                 if not a.get("summary"):
                     a["summary"] = a.get("content", a.get("title", ""))[:80]
                     a["category"] = "行业动态"
-
-    return articles

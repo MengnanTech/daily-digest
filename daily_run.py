@@ -10,8 +10,12 @@ from scrapers import (
     fetch_devto,
     fetch_v2ex,
     fetch_rss_feeds,
-    fetch_36kr,
     fetch_twitter_kols,
+    fetch_lobsters,
+    fetch_reddit,
+    fetch_rsshub,
+    fetch_cn_rss,
+    fetch_youtube,
 )
 from pipeline import deduplicate, rank_articles, summarize_articles, fetch_content_for_articles
 from output import generate_html, save_digest_json
@@ -33,12 +37,14 @@ async def run():
         fetch_github_trending(15),
         fetch_devto(15),
         fetch_v2ex(15),
+        fetch_lobsters(15),
+        fetch_reddit(5),
         return_exceptions=True,
     )
 
     # 同步源
     sync_results = []
-    for fetch_fn in [fetch_rss_feeds, fetch_36kr, fetch_twitter_kols]:
+    for fetch_fn in [fetch_rss_feeds, fetch_twitter_kols, fetch_rsshub, fetch_cn_rss, fetch_youtube]:
         try:
             result = fetch_fn()
             sync_results.append(result)
@@ -48,8 +54,11 @@ async def run():
 
     # 合并所有结果
     all_articles = []
-    source_names = ["HackerNews", "ProductHunt", "GitHub", "Dev.to", "V2EX",
-                     "RSS", "36氪", "Twitter"]
+    source_names = [
+        "HackerNews", "ProductHunt", "GitHub", "Dev.to", "V2EX",
+        "Lobsters", "Reddit",
+        "英文RSS", "Twitter", "中文RSSHub", "中文RSS", "YouTube",
+    ]
 
     for i, result in enumerate(list(async_results) + sync_results):
         name = source_names[i] if i < len(source_names) else f"Source-{i}"
@@ -76,53 +85,34 @@ async def run():
     print("📈 排序中...")
     ranked = rank_articles(unique)
 
-    # ── 4. 取 TOP 20，补充正文 ──────────────────────
-    top_n = 20
-    top_articles = ranked[:top_n]
+    # ── 4. 每个平台取 TOP N ─────────────────────────
+    # 按平台分组，每组取前 10 条
+    from collections import defaultdict
+    per_platform = 10
+    by_source = defaultdict(list)
+    for a in ranked:
+        by_source[a.get("source", "other")].append(a)
 
-    print(f"📄 为 TOP {top_n} 补充正文...")
-    top_articles = await fetch_content_for_articles(top_articles)
+    selected = []
+    for source, items in by_source.items():
+        selected.extend(items[:per_platform])
+
+    print(f"📄 每平台取 TOP {per_platform}，共选出 {len(selected)} 条")
+    print(f"📄 补充正文...")
+    selected = await fetch_content_for_articles(selected)
 
     # ── 5. AI 摘要 ──────────────────────────────────
     print("🤖 生成 AI 摘要...\n")
-    top_articles = await summarize_articles(top_articles)
+    selected = await summarize_articles(selected)
 
     # ── 6. 输出 ─────────────────────────────────────
-    # 生成 HTML
-    html_path = generate_html(top_articles, today)
+    html_path = generate_html(selected, today)
     print(f"📄 HTML 已生成: {html_path}")
 
-    # 保存 JSON
-    json_path = save_digest_json(top_articles, today)
+    json_path = save_digest_json(selected, today)
     print(f"💾 JSON 已保存: {json_path}")
 
-    # 控制台预览
-    print(f"\n{'='*60}")
-    print(f"🔥 今日 TOP {top_n}")
-    print(f"{'='*60}\n")
-
-    for i, article in enumerate(top_articles, 1):
-        source = article.get("source", "")
-        score = article.get("score", 0)
-        also_on = article.get("also_on", [])
-        category = article.get("category", "")
-        summary = article.get("summary", "")
-
-        source_info = f"[{source}"
-        if score > 0:
-            source_info += f"/{score}分"
-        source_info += "]"
-        if also_on:
-            source_info += f" 也出现在: {', '.join(also_on)}"
-
-        print(f"{i:2d}. {article.get('title', '')}")
-        print(f"    {source_info} #{category}")
-        if summary:
-            print(f"    📝 {summary}")
-        print(f"    🔗 {article.get('url', '')}")
-        print()
-
-    print(f"✅ 完成！用浏览器打开 {html_path} 查看完整报告\n")
+    print(f"\n✅ 完成！用浏览器打开 {html_path} 查看完整报告\n")
 
 
 if __name__ == "__main__":
