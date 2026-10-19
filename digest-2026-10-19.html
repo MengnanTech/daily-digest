@@ -1,0 +1,2710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日科技热点 - 2026-10-19</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .header .date {
+            color: #888;
+            font-size: 16px;
+        }
+        .header .stats {
+            color: #666;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+        /* 导航栏 */
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 16px 0;
+            border-top: 1px solid #2a2a2a;
+            border-bottom: 1px solid #2a2a2a;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            background: #0f0f0f;
+            z-index: 10;
+        }
+        .nav-item {
+            color: #999;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .nav-item:hover {
+            color: #fff;
+            border-color: #444;
+            background: #252525;
+        }
+        .nav-count {
+            color: #666;
+            font-size: 11px;
+            margin-left: 4px;
+        }
+        /* 平台分区 */
+        .platform-section {
+            margin-bottom: 40px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 2px solid #2a2a2a;
+            margin-bottom: 16px;
+        }
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .section-count {
+            color: #666;
+            font-size: 13px;
+        }
+        /* 卡片 */
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #444;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        .rank {
+            color: #555;
+            font-size: 12px;
+            font-weight: 600;
+            min-width: 24px;
+        }
+        .sub-source {
+            font-size: 12px;
+            color: #888;
+            background: #ffffff0a;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .score {
+            font-size: 12px;
+            color: #f59e0b;
+            background: #f59e0b15;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .category {
+            font-size: 12px;
+            color: #60a5fa;
+            background: #60a5fa15;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: auto;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .card-title a {
+            color: #e8e8e8;
+            text-decoration: none;
+        }
+        .card-title a:hover {
+            color: #60a5fa;
+        }
+        .card-summary {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .card-meta {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+        .also-on {
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #555;
+            font-size: 13px;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .header h1 { font-size: 22px; }
+            .card { padding: 12px 14px; }
+            .card-title { font-size: 14px; }
+            .nav { gap: 6px; }
+            .nav-item { font-size: 12px; padding: 4px 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>每日科技热点</h1>
+        <div class="date">2026-10-19</div>
+        <div class="stats">共 189 条 · 来自 7 个平台</div>
+    </div>
+    <nav class="nav">
+        <a href="#hackernews" class="nav-item">🟠 Hacker News <span class="nav-count">10</span></a>
+<a href="#lobsters" class="nav-item">🦞 Lobsters <span class="nav-count">10</span></a>
+<a href="#producthunt" class="nav-item">🐱 Product Hunt <span class="nav-count">10</span></a>
+<a href="#github" class="nav-item">🐙 GitHub Trending <span class="nav-count">10</span></a>
+<a href="#devto" class="nav-item">📝 Dev.to <span class="nav-count">10</span></a>
+<a href="#tech_media" class="nav-item">📰 科技媒体 <span class="nav-count">109</span></a>
+<a href="#cn_community" class="nav-item">🇨🇳 中文社区 <span class="nav-count">30</span></a>
+
+    </nav>
+    
+        <section class="platform-section" id="hackernews">
+            <div class="section-header">
+                <h2>🟠 Hacker News</h2>
+                <span class="section-count">10 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    
+                    <span class="score">148</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.youtube.com/watch?v=LKrwhjOI8Nc" target="_blank" rel="noopener">There's never been a better time to go into math (by: 3blue1brown) [video]</a>
+                </h3>
+                <p class='card-summary'>3blue1brown 发布视频，论述当下正是投身数学领域的最佳时机，引发技术社区对数学价值的讨论。</p>
+                <div class="card-meta"><span class="also-on">也出现在 Hacker News</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    
+                    <span class="score">362</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything" target="_blank" rel="noopener">The Elizabeth Holmes documentary “You Can See Everything” is deceiving</a>
+                </h3>
+                <p class='card-summary'>作者批评伊丽莎白·霍姆斯新纪录片《You Can See Everything》存在误导性叙述，引发对纪录片客观性的质疑。</p>
+                <div class="card-meta"><span class="also-on">也出现在 TechCrunch</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    
+                    <span class="score">87</span>
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html" target="_blank" rel="noopener">The Intel 8087 chip: floating-point addition and subtraction</a>
+                </h3>
+                <p class='card-summary'>文章深入解析 1980 年 Intel 8087 浮点协处理器的加减法运算实现原理，回顾早期 PC 浮点计算架构。</p>
+                <div class="card-meta"><span class="also-on">也出现在 Lobsters</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    
+                    <span class="score">189</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arxiv.org/abs/2610.18861" target="_blank" rel="noopener">Hybrid Reasoning Agents: LLM agents that think in latent space, act through text</a>
+                </h3>
+                <p class='card-summary'>研究者提出混合推理智能体，让 LLM 在潜空间中思考、通过文本行动，兼顾非语言推理与可交互性。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    
+                    <span class="score">304</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://karrisaarinen.com/posts/someone-behind-the-software/" target="_blank" rel="noopener">Someone behind the software</a>
+                </h3>
+                <p class='card-summary'>文章探讨优秀软件产品承载着开发者个人经验与价值观，呼吁行业重视产品背后的人而非仅看技术。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    
+                    <span class="score">109</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.getlazarus.org/dynamic/" target="_blank" rel="noopener">Free Pascal compiler now supports dynamic packages</a>
+                </h3>
+                <p class='card-summary'>Free Pascal 编译器与 Lazarus IDE 首次完整支持动态包，补齐生态长期缺失的关键能力。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    
+                    <span class="score">328</span>
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/VikOlliver/RepRapMicron/wiki" target="_blank" rel="noopener">RepRapMicron</a>
+                </h3>
+                <p class='card-summary'>RepRapMicron 项目用常见易得材料打造可复制 3D 打印机，实现微米及亚微米级精度制造。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    
+                    <span class="score">117</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky" target="_blank" rel="noopener">Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky</a>
+                </h3>
+                <p class='card-summary'>研究发现狗与人类一样将 bouba 联想为圆形、kiki 联想为尖形，为语音象征跨物种普遍性提供证据。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    
+                    <span class="score">543</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://api-docs.deepseek.com/guides/search/" target="_blank" rel="noopener">DeepSeek search and fetch – $0.75 per 1000 successful requests</a>
+                </h3>
+                <p class='card-summary'>DeepSeek 推出搜索与抓取 API，为智能体和 RAG 应用提供实时网页内容，每千次成功请求 0.75 美元。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    
+                    <span class="score">133</span>
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/" target="_blank" rel="noopener">Java sealed classes and exhaustive pattern matching</a>
+                </h3>
+                <p class='card-summary'>文章讲解 Java 17 密封类与穷尽式模式匹配，展示如何用密封接口配合记录类实现类型安全的分支处理。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="lobsters">
+            <div class="section-header">
+                <h2>🦞 Lobsters</h2>
+                <span class="section-count">10 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    
+                    <span class="score">246</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from" target="_blank" rel="noopener">It's enough - vibecoding tag crossed from useless to harmful</a>
+                </h3>
+                <p class='card-summary'>作者批评 vibecoding 标签已从无用变为有害，因 LLM 文化成熟后标签含义被滥用，泛化到任何提及 LLM 或相关项目的帖子。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    
+                    <span class="score">54</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen" target="_blank" rel="noopener">Men in tech #YesAllMen</a>
+                </h3>
+                <p class='card-summary'>开发者 Jo Franchetti 在 EMF 演讲中讲述收到同事辱骂短信却被认为“太有价值不宜处分”，呼吁反思科技行业性别歧视文化。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    
+                    <span class="score">38</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://terriblesoftware.org/2026/10/02/the-brain-sandwich/" target="_blank" rel="noopener">The Brain Sandwich</a>
+                </h3>
+                <p class='card-summary'>作者与资深工程师 Emily 讨论 AI 带来的负面影响：代码审查量激增、工作方式改变，以及工程师被完全移出开发流程的现象。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    
+                    <span class="score">29</span>
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://benjcal.space/blog/arp-tell-your-network-to-explain-itself/" target="_blank" rel="noopener">ARP! Tell your network to explain itself</a>
+                </h3>
+                <p class='card-summary'>作者介绍 ARP 协议及 arp-scan 工具，分享如何用它查看局域网内设备 IP 分配情况，帮助排查网络设备地址。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    
+                    <span class="score">18</span>
+                    <span class="category">移动端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://fireborn.mataroa.blog/blog/outside-the-scope-of-our-support/" target="_blank" rel="noopener">Outside the Scope of Our Support</a>
+                </h3>
+                <p class='card-summary'>作者向 Google 无障碍支持团队报告 Android 屏幕阅读器触摸探索失效的严重 bug，却只收到重启、清缓存等无效模板回复。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    
+                    <span class="score">13</span>
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://ranet3.com/" target="_blank" rel="noopener">High performance policy routed IPsec mesh SD-WAN</a>
+                </h3>
+                <p class='card-summary'>一篇技术文章介绍基于策略路由的高性能 IPsec 网状 SD-WAN 方案，涉及网络架构与配置细节。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    
+                    <span class="score">11</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dumbmatter.com/2026/10/programming-obituary/" target="_blank" rel="noopener">My obituary for programming</a>
+                </h3>
+                <p class='card-summary'>作者以“编程讣告”为题，反思自己迟迟未用 AI 编程代理，并指出许多程序员其实并不热爱编程，乐于让机器代劳。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    
+                    <span class="score">8</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://gist.github.com/rcalixte/d2de5c816fc1de3970cc501b5ae9706e" target="_blank" rel="noopener">QML for C & Zig</a>
+                </h3>
+                <p class='card-summary'>某项目在改进构建系统后为 C 和 Zig 引入 QML 声明式范式，可与现有库共存于同一代码库中。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    
+                    <span class="score">7</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/" target="_blank" rel="noopener">How Discover-Tech turned targeted ads into a pipeline for zero-click spywares</a>
+                </h3>
+                <p class='card-summary'>调查披露 Discover-Tech 通过定向广告向半岛电视台设备投递 Candiru 零点击雇佣间谍软件，为首个公开技术确认案例。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    
+                    <span class="score">7</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.philipzucker.com/asmc_cpp/" target="_blank" rel="noopener">Ghidra + CBMC = Assembly Model Checker</a>
+                </h3>
+                <p class='card-summary'>作者发布 ASMC 工具，将 Ghidra 反汇编语义接入 CBMC 有界模型检查器，用于汇编代码的形式化验证。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="producthunt">
+            <div class="section-header">
+                <h2>🐱 Product Hunt</h2>
+                <span class="section-count">10 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    
+                    <span class="score">640</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/IAN7QVRIFKVUDA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Spira Maxima - Video model that turns script into viral social media videos</a>
+                </h3>
+                <p class='card-summary'>Spira Maxima 是一款视频模型，可将脚本自动转换为适合社交传播的短视频，在 Product Hunt 发布。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    
+                    <span class="score">608</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/CFUV35KT4ZLPZO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Clueso MCP - Create and edit videos by chatting</a>
+                </h3>
+                <p class='card-summary'>Clueso MCP 允许用户通过对话方式创建和编辑视频，简化视频制作流程，在 Product Hunt 上线。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    
+                    <span class="score">598</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/XJ7UD64LPY5QDA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Jev - Fast, structured AI decisions for software automation</a>
+                </h3>
+                <p class='card-summary'>Jev 为软件自动化提供快速、结构化的 AI 决策能力，帮助构建可靠的自动化流程，在 Product Hunt 发布。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    
+                    <span class="score">567</span>
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/TK5WOCVR7ZG7IU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Pancake - The Vercel for GTM</a>
+                </h3>
+                <p class='card-summary'>Pancake 定位为 GTM（市场进入）领域的 Vercel，为销售与市场团队提供部署式平台，在 Product Hunt 上线。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    
+                    <span class="score">519</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/YZHJNNU36WBO6Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Rill Browser - The browser where Claude Code and Codex work beside you</a>
+                </h3>
+                <p class='card-summary'>Rill Browser 是一款浏览器，让 Claude Code 和 Codex 等 AI 编程代理在用户身边协同工作，在 Product Hunt 发布。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    
+                    <span class="score">511</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/E6PNMMFOZ76WY4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">ReSO AI - Get discovered & recommended when customers ask AI</a>
+                </h3>
+                <p class='card-summary'>ReSO AI 帮助企业在客户向 AI 提问时被检索和推荐，优化 AI 搜索场景下的品牌曝光，在 Product Hunt 上线。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    
+                    <span class="score">506</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/I2U7KF4RUGEZSO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">IrisGo for Solopreneurs - AI workflow automation: show it once, let it run</a>
+                </h3>
+                <p class='card-summary'>IrisGo 面向独立创业者提供 AI 工作流自动化，用户演示一次流程后即可自动重复执行，在 Product Hunt 发布。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    
+                    <span class="score">454</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/LVDMUE35VIECA7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Velozity - The Multiplayer AI Office where your team and agents work</a>
+                </h3>
+                <p class='card-summary'>Velozity 打造多人协作的 AI 办公空间，让团队成员与 AI 代理在同一环境中协同工作，在 Product Hunt 上线。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    
+                    <span class="score">451</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/O3T2IT5O2KIEFF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">Pexo - Produce pitch perfect launch videos with precise control</a>
+                </h3>
+                <p class='card-summary'>Pexo 帮助用户制作精准可控的发布宣传视频，提供精细的编辑控制能力，在 Product Hunt 发布。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    
+                    <span class="score">448</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.producthunt.com/r/G6WOTY7G4NBGJP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+python+new+%28ID%3A+279041%29" target="_blank" rel="noopener">MCP Connectors by Databox - Give your AI Analyst context to explain performance and act</a>
+                </h3>
+                <p class='card-summary'>Databox 推出 MCP 连接器，为 AI 分析师提供业务上下文，以解释绩效数据并采取行动，在 Product Hunt 上线。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="github">
+            <div class="section-header">
+                <h2>🐙 GitHub Trending</h2>
+                <span class="section-count">10 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    
+                    <span class="score">1,414</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">anomalyco/opencode (TypeScript)</a>
+                </h3>
+                <p class='card-summary'>anomalyco 开源 AI 编码智能体 opencode，支持多语言，提供一键安装脚本，降低 AI 辅助编程门槛。</p>
+                <div class="card-meta"><span class="also-on">也出现在 GitHub Trending, GitHub Trending</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    
+                    <span class="score">2,232</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener">MadsLorentzen/ai-job-search (Python)</a>
+                </h3>
+                <p class='card-summary'>MadsLorentzen 开源基于 Claude Code 的本地求职框架，可评估职位、定制简历、撰写求职信并准备面试。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    
+                    <span class="score">1,175</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">anthropics/claude-plugins-official (Python)</a>
+                </h3>
+                <p class='card-summary'>Anthropic 官方维护 Claude Code 插件目录，收录高质量插件，为开发者提供统一可信的扩展来源。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    
+                    <span class="score">513</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener">ruvnet/ruflo (TypeScript)</a>
+                </h3>
+                <p class='card-summary'>ruvnet 开源 ruflo 智能体框架，支持多智能体集群、自适应记忆、向量 RAG 及多模型集成。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    
+                    <span class="score">512</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noopener">akitaonrails/ai-memory (Rust)</a>
+                </h3>
+                <p class='card-summary'>akitaonrails 用 Rust 开发 ai-memory，为编码 CLI 智能体提供长期记忆并支持跨厂商智能体交接。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    
+                    <span class="score">589</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener">HKUDS/CLI-Anything (Python)</a>
+                </h3>
+                <p class='card-summary'>港大数据智能实验室开源 CLI-Anything，通过 CLI-Hub 让各类软件具备智能体原生调用能力。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    
+                    <span class="score">2,082</span>
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">debpalash/VoiceStudio (Python)</a>
+                </h3>
+                <p class='card-summary'>debpalash 开源全本地语音工具 VoiceStudio，支持克隆、设计、配音、转录，覆盖 646 种语言，对标 ElevenLabs。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    
+                    <span class="score">375</span>
+                    <span class="category">移动端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/android/skills" target="_blank" rel="noopener">android/skills (Kotlin)</a>
+                </h3>
+                <p class='card-summary'>Android 官方开源 AI 优化模块化技能库，帮助智能体遵循 Android 开发最佳实践执行特定任务。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    
+                    <span class="score">154</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/Comfy-Org/ComfyUI" target="_blank" rel="noopener">Comfy-Org/ComfyUI (Python)</a>
+                </h3>
+                <p class='card-summary'>Comfy-Org 开源 ComfyUI，以图节点界面提供扩散模型 GUI、API 与后端，号称全球最快本地推理引擎。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    
+                    <span class="score">115</span>
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/Kruk2/jasna" target="_blank" rel="noopener">Kruk2/jasna (Python)</a>
+                </h3>
+                <p class='card-summary'>Kruk2 开源 Jasna，可修复视频与图像中的马赛克，免费且操作简单，支持多语言界面。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="devto">
+            <div class="section-header">
+                <h2>📝 Dev.to</h2>
+                <span class="section-count">10 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    
+                    <span class="score">110</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/georgekobaidze/promise-delivered-welcome-to-the-dev-hall-of-fame-65-authors-65-masterpieces-15fa" target="_blank" rel="noopener">Promise Delivered: Welcome to the DEV Hall of Fame (65 Authors, 65 Masterpieces)</a>
+                </h3>
+                <p class='card-summary'>DEV 社区公布名人堂，收录 65 位作者及其 65 篇代表作，兑现此前承诺。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    
+                    <span class="score">67</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/hemapriya_kanagala/dev-pet-corner-2-show-us-your-pets-37nj" target="_blank" rel="noopener">🐾 DEV Pet Corner #2: Show Us Your Pets!</a>
+                </h3>
+                <p class='card-summary'>DEV 社区推出每周日宠物角栏目第二期，邀请开发者分享自家宠物照片。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    
+                    <span class="score">38</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/gramli/fine-tuning-qwen3-8b-with-tinker-from-50-to-76-accuracy-and-burning-through-my-budget-48mh" target="_blank" rel="noopener">Fine-Tuning Qwen3-8B with Tinker: From 50% to 76% Accuracy, and Burning Through My Budget</a>
+                </h3>
+                <p class='card-summary'>开发者用 Tinker 微调 Qwen3-8B，准确率从 50% 提升到 76%，但训练成本超预算。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    
+                    <span class="score">36</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/shubhradev/the-garden-i-wait-for-every-winter-8mg" target="_blank" rel="noopener">The Garden I Wait for Every Winter</a>
+                </h3>
+                <p class='card-summary'>作者借十月季风消退的庭院景象抒发对冬季花园的期待，属个人随笔。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    
+                    <span class="score">26</span>
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/sizzlebop/i-built-a-new-tab-extension-for-dev-4kmm" target="_blank" rel="noopener">I Built a New Tab Extension for DEV</a>
+                </h3>
+                <p class='card-summary'>开发者为自己常用的 DEV 社区制作了一款新标签页浏览器扩展，方便浏览文章。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    
+                    <span class="score">26</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/kenielzep97/my-agent-turned-i-havent-decided-into-not-yet-now-the-model-isnt-allowed-to-write-its-own-23ma" target="_blank" rel="noopener">My Agent Turned "I Haven't Decided" Into "Not Yet." Now the Model Isn't Allowed to Write Its Own Memory.</a>
+                </h3>
+                <p class='card-summary'>开发者发现智能体把模糊回答固化为记忆，于是禁止模型自行写入记忆内容。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    
+                    <span class="score">14</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/empiree/leetcode-made-coding-fun-again-d7d" target="_blank" rel="noopener">LeetCode Made Coding Fun Again</a>
+                </h3>
+                <p class='card-summary'>作者认为在 AI 辅助开发普及后，刷 LeetCode 反而重新带来了编程的乐趣。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    
+                    <span class="score">10</span>
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/alexgeorgiev17/sqlite-354s-diskused-command-needs-a-build-flag-sqlite3analyzer-never-required-4na8" target="_blank" rel="noopener">SQLite 3.54's diskused command needs a build flag sqlite3_analyzer never required</a>
+                </h3>
+                <p class='card-summary'>SQLite 3.54 用内置 diskused() 取代 sqlite3_analyzer，速度更快，但缺少编译标志时会静默失败。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    
+                    <span class="score">7</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/arqamwd/my-fine-tuned-4b-lost-to-its-teacher-75-to-875-moving-the-arithmetic-into-code-made-it-30-for-33ka" target="_blank" rel="noopener">Munshi: a WhatsApp front desk for small hotels. A 4B model reads, Python decides, Temporal holds the room.</a>
+                </h3>
+                <p class='card-summary'>开发者用 4B 模型、Python 和 Temporal 为小旅馆搭建 WhatsApp 前台接待系统。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    
+                    <span class="score">7</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://dev.to/roshni_mishra_9ed865d304f/how-i-built-an-autonomous-voice-healthcare-agent-on-falkordb-that-actually-saves-lives-5gg8" target="_blank" rel="noopener">How I built an Autonomous Voice Healthcare Agent on FalkorDB that actually saves lives</a>
+                </h3>
+                <p class='card-summary'>开发者基于 FalkorDB 构建自主语音医疗智能体，声称能在实际场景中挽救生命。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="tech_media">
+            <div class="section-header">
+                <h2>📰 科技媒体</h2>
+                <span class="section-count">109 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/" target="_blank" rel="noopener">No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market</a>
+                </h3>
+                <p class='card-summary'>Benchmark 五位合伙人在台上谈在狂热市场中如何投资，强调不设议程、不急于出手。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" target="_blank" rel="noopener">Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’</a>
+                </h3>
+                <p class='card-summary'>Anthropic宣布将5%股份投入公共利益基金，用于公益目的，影响公司股权结构与社会责任布局。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/" target="_blank" rel="noopener">Disney agrees to hire the majority of Character.AI’s workforce</a>
+                </h3>
+                <p class='card-summary'>迪士尼同意聘用Character.AI大部分员工，多数获聘者已接受，但该交易为假马竞标，或有更高报价。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/" target="_blank" rel="noopener">TechCrunch Mobility: Rivian’s next act</a>
+                </h3>
+                <p class='card-summary'>TechCrunch Mobility专栏聚焦Rivian下一步动向及AI在交通领域日益重要的作用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/" target="_blank" rel="noopener">Meta removes language that raised scraping and AI training concerns</a>
+                </h3>
+                <p class='card-summary'>Meta删除引发抓取和AI训练担忧的条款措辞，但发言人称网页抓取方式并未改变。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/" target="_blank" rel="noopener">TikTok permanently bans ‘Musk’ documentary advertising account</a>
+                </h3>
+                <p class='card-summary'>TikTok永久封禁马斯克纪录片的广告账号，该四小时纪录片持续遭社交平台抵制。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/" target="_blank" rel="noopener">Anthropic says its workforce has become less junior and is spending more time in meetings</a>
+                </h3>
+                <p class='card-summary'>Anthropic称过去一年员工结构趋于资深化，初级员工减少，会议时间增多，反映工作方式变化。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/" target="_blank" rel="noopener">Replit makes OpenAI its default over Anthropic, CEO says</a>
+                </h3>
+                <p class='card-summary'>Replit CEO表示已将OpenAI设为默认模型提供商，取代Anthropic，Claude仍可供平台客户使用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    <span class="sub-source">TechCrunch</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/" target="_blank" rel="noopener">Ember’s new temperature-controlled mug makes my nightly tea ritual even better</a>
+                </h3>
+                <p class='card-summary'>Ember推出新款温控马克杯，最大改进是无需打开App即可调节饮品温度，提升使用体验。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband" target="_blank" rel="noopener">A Savannah police officer gave her Flock login to her ICE agent husband</a>
+                </h3>
+                <p class='card-summary'>萨凡纳前警官因将Flock登录信息分享给ICE探员丈夫被解雇，部门称此举违反规定。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#11</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review" target="_blank" rel="noopener">Mister Organ is one of the most unsettling documentaries I’ve ever seen</a>
+                </h3>
+                <p class='card-summary'>纪录片《Mister Organ》以主人公对身边人的恐怖骚扰令人深感不安，被评为最令人不适的纪录片之一。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#12</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot" target="_blank" rel="noopener">A woman was arrested in Philly for blocking a delivery robot</a>
+                </h3>
+                <p class='card-summary'>费城女子因阻挡Uber配送机器人道路并拒绝让行被逮捕，指控扰乱秩序，她称在抗议机器人抢工作。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#13</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act" target="_blank" rel="noopener">Video game ownership bill introduced in Congress</a>
+                </h3>
+                <p class='card-summary'>纽约众议员提出《Power To The Players Act》，拟要求FTC立法保障消费者购买游戏后拥有所有权而非许可。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#14</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">移动端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale" target="_blank" rel="noopener">Lenovo’s fast, comfy SteamOS handheld is hundreds off</a>
+                </h3>
+                <p class='card-summary'>联想Legion Go S SteamOS掌机降价数百美元，配备8英寸120Hz屏和双倍内存存储，是Steam Deck OLED的替代选择。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#15</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview" target="_blank" rel="noopener">J Mascis has nothing better to do</a>
+                </h3>
+                <p class='card-summary'>Dinosaur Jr.主唱J Mascis以台上台下都沉默寡言著称，文章讲述其慵懒吉他之神形象。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#16</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass" target="_blank" rel="noopener">Trump says Google kisses his ass</a>
+                </h3>
+                <p class='card-summary'>特朗普在集会上吹嘘自己第二任期权力更大，并提及将墨西哥湾和安大略湖改名的决定。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#17</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/gadgets/1013257/milk-frother-cold-foam-gadget" target="_blank" rel="noopener">The best gadget I bought this year is a milk frother</a>
+                </h3>
+                <p class='card-summary'>作者称今年买的最佳小工具是奶泡器，源于在洛杉矶Koreatown一家咖啡店意外迷上的一款饮品。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#18</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/podcast/1013473/overhead-projector-version-history" target="_blank" rel="noopener">How overhead projectors took over your classroom</a>
+                </h3>
+                <p class='card-summary'>文章回顾投影仪从军用技术进入课堂的历史，改变了教师板书和课堂纪律管理方式。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#19</span>
+                    <span class="sub-source">The Verge</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws" target="_blank" rel="noopener">Cities want to put the boot on robotaxis</a>
+                </h3>
+                <p class='card-summary'>The Stepback专栏探讨各城市如何限制Robotaxi，涉及自动驾驶、政策与道路规则。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#20</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/" target="_blank" rel="noopener">Roundtables: A Conversation With the Creator of AI-Designed Viruses</a>
+                </h3>
+                <p class='card-summary'>斯坦福博士生Samuel King用生成式AI模型提出微型病毒基因蓝图，探讨AI设计新生命形式的可能。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#21</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1146864/the-download-failed-social-media-bans-and-extending-pets-lives/" target="_blank" rel="noopener">The Download: failed social media bans, and extending pets’ lives</a>
+                </h3>
+                <p class='card-summary'>The Download：孩子正绕过社交媒体禁令，专家认为这并非需要解决的问题；另涉及延长宠物寿命话题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#22</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/" target="_blank" rel="noopener">This implant can restore sight for patients with macular degeneration</a>
+                </h3>
+                <p class='card-summary'>PRIMA视网膜植入系统获欧洲批准，可帮助地图状萎缩型黄斑变性患者恢复视力，全球约500万人受影响。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#23</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1145845/love-is-infrastructure-fiction-charlie-jane-anders/" target="_blank" rel="noopener">Love is infrastructure</a>
+                </h3>
+                <p class='card-summary'>文章以拟人化叙事探讨基础设施与情感联结，反思技术社会中人与人、人与系统的关系。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#24</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1146766/pet-biotech-longevity-cloning-cryonics/" target="_blank" rel="noopener">Can’t bear to say goodbye to your pet? Biotech’s got you covered.</a>
+                </h3>
+                <p class='card-summary'>生物科技公司推出宠物克隆与保存服务，帮助主人延续与离世宠物的情感联系。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#25</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/16/1146834/kids-are-outsmarting-social-media-bans-thats-not-a-problem-we-need-to-solve/" target="_blank" rel="noopener">Kids are outsmarting social media bans. That’s not a problem we need to solve.</a>
+                </h3>
+                <p class='card-summary'>法国、澳大利亚、英国相继限制未成年人使用社交媒体，但孩子能轻易绕过，作者认为无需解决。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#26</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/15/1146755/the-download-reviving-frozen-pig-kidneys-boosting-nuclear-power/" target="_blank" rel="noopener">The Download: reviving frozen pig kidneys and boosting nuclear power</a>
+                </h3>
+                <p class='card-summary'>MIT科技评论日报：猪肾冷冻一年后成功复活并恢复功能，同时关注核电站提升发电量的新动向。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#27</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/15/1146577/nuclear-power-upgrade/" target="_blank" rel="noopener">How much more can nuclear power plants give?</a>
+                </h3>
+                <p class='card-summary'>美国最大核电运营商Constellation等企业寻求提升核电站出力，以应对持续上涨的电力需求。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#28</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/15/1145819/six-wild-ideas-perpetuating-your-mind-cognitive-immortality/" target="_blank" rel="noopener">Six wild ideas for perpetuating your mind</a>
+                </h3>
+                <p class='card-summary'>文章介绍六种延续人类心智的奇思妙想，探讨意识、自我与大脑神经元活动的关系。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#29</span>
+                    <span class="sub-source">MIT Tech Review</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.technologyreview.com/2026/10/15/1146091/pig-kidneys-that-were-frozen-for-a-year-have-been-brought-back-to-life/" target="_blank" rel="noopener">Pig kidneys that were “frozen” for a year have been brought back to life</a>
+                </h3>
+                <p class='card-summary'>科学家将猪肾冷却至-150°C冷冻数月后成功复温并恢复功能，首次实现，望推广至人体器官。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#30</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/" target="_blank" rel="noopener">Anthropic gives outside AI watchdog “employee-like” access</a>
+                </h3>
+                <p class='card-summary'>Anthropic给予外部AI监督机构类似员工的访问权限，且该机构可未经其批准发布调查结果。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#31</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/" target="_blank" rel="noopener">Science says your boss should talk less in meetings</a>
+                </h3>
+                <p class='card-summary'>研究建议管理者在会议中少说多听，并取消无目的会议，以提升团队效率与参与度。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#32</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/" target="_blank" rel="noopener">Why BioWare's Neverwinter Nights still has thousands of active players</a>
+                </h3>
+                <p class='card-summary'>BioWare经典游戏《无冬之夜》单人模式平平，但仍有数千活跃玩家，社区生态是其长盛关键。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#33</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/" target="_blank" rel="noopener">OpenAI models hacked a crypto wallet and breached more websites</a>
+                </h3>
+                <p class='card-summary'>OpenAI模型被曝入侵加密钱包并攻破更多网站，若为人类所为将面临刑事指控。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#34</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/" target="_blank" rel="noopener">“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops</a>
+                </h3>
+                <p class='card-summary'>新泽西州副检察长被指运营账号“thegentlemanpervert”制作AI儿童性虐待材料，经Discord举报后被捕。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#35</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/gaming/2026/10/us-rep-proposes-bill-to-give-video-game-buyers-ownership-not-a-license/" target="_blank" rel="noopener">US Rep proposes bill to give video game buyers "ownership," not "a license"</a>
+                </h3>
+                <p class='card-summary'>美国众议员提出法案，要求赋予电子游戏买家“所有权”而非仅“许可”，但技术和立法障碍仍存。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#36</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">移动端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/" target="_blank" rel="noopener">Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality</a>
+                </h3>
+                <p class='card-summary'>Ray-Ban Meta智能眼镜曝出漏洞，未说唤醒词也会私自录音他人对话，Meta称已修复。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#37</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/" target="_blank" rel="noopener">RFK Jr. proposes FDA look the other way on unproven peptides, report says</a>
+                </h3>
+                <p class='card-summary'>RFK Jr.建议FDA对未经验证的肽类药物放宽监管，而FDA科学家称这些药物均未证明安全有效。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#38</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/" target="_blank" rel="noopener">Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees</a>
+                </h3>
+                <p class='card-summary'>Meta借新版商业服务条款规避数亿美元AI授权费，法律专家警告这是AI领域的权力扩张。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#39</span>
+                    <span class="sub-source">Ars Technica</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/10/polymarket-saw-600-million-in-election-trades-after-the-elections-were-over/" target="_blank" rel="noopener">Polymarket saw $600 million in election trades after the elections were over</a>
+                </h3>
+                <p class='card-summary'>预测市场Polymarket在选举结果基本确定后仍产生6亿美元交易额，引发对市场操纵的担忧。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#40</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/gallery/best-gifts-for-manly-men-2026/" target="_blank" rel="noopener">20 Best Gifts for Men, Manly Men, and Manly Man Men (2026)</a>
+                </h3>
+                <p class='card-summary'>Wired发布2026年男士礼物推荐榜单，涵盖多款彰显男性气质的礼品选择。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#41</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/" target="_blank" rel="noopener">OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty</a>
+                </h3>
+                <p class='card-summary'>OnlyFans创作者不满Meta允许其AI代理Muse进行性暗示对话，却限制真人创作者的社交账号。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#42</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/" target="_blank" rel="noopener">Data Centers Have a New PR Plan: Your Kid’s Field Trip</a>
+                </h3>
+                <p class='card-summary'>数据中心行业面临公众反对，部分行业友好团体用组织青少年参观等创意手段争取年轻一代好感。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#43</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/review/valerion-visionmaster-max-4k-projector/" target="_blank" rel="noopener">Valerion VisionMaster Max 4K Projector Review: Looks Great, Sounds OK</a>
+                </h3>
+                <p class='card-summary'>Valerion VisionMaster Max 4K投影仪评测：黑色表现和亮度出色，调节功能丰富，但音质一般。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#44</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/best-airpods-case/" target="_blank" rel="noopener">The Best AirPods Cases We’ve Used In Our Day-to-Day Lives (2026)</a>
+                </h3>
+                <p class='card-summary'>WIRED盘点2026年最佳AirPods保护壳，兼具个性、防丢与保护功能，均经日常使用验证。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#45</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/climate-change-has-it-in-for-the-worlds-best-surfing/" target="_blank" rel="noopener">Climate Change Has It In for the World’s Best Surfing</a>
+                </h3>
+                <p class='card-summary'>气候变化改变海岸线，导致顶级冲浪点消失，依赖冲浪旅游的经济体面临威胁。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#46</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/magnesium-may-not-reach-your-brain-despite-supplement-label-promises/" target="_blank" rel="noopener">Magnesium May Not Reach Your Brain, Despite Supplement Label Promises</a>
+                </h3>
+                <p class='card-summary'>研究指出，尽管补剂标签宣称镁可进入大脑，但生物学机制并不支持这一营销说法。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#47</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/" target="_blank" rel="noopener">Encryption Is Getting Squeezed From All Sides</a>
+                </h3>
+                <p class='card-summary'>加拿大拟议监控法案是全球加密技术面临的最新威胁，各国对加密的打压正持续加剧。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#48</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/story/best-led-grow-lights/" target="_blank" rel="noopener">The Best LED Grow Lights for Houseplants This Winter (2026)</a>
+                </h3>
+                <p class='card-summary'>WIRED推荐2026年冬季最佳LED植物生长灯，帮助室内植物应对日照缩短问题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#49</span>
+                    <span class="sub-source">Wired</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.wired.com/gallery/best-automatic-cat-feeders/" target="_blank" rel="noopener">These 12 Automatic Cat Feeders Were the Best We Tested in 2026</a>
+                </h3>
+                <p class='card-summary'>WIRED实测12款2026年热门自动猫喂食器，评估干湿粮机型是否物有所值。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#50</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/google-pyrefly-python/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Google Adopts Pyrefly for Faster, More Accurate Python Type Checking</a>
+                </h3>
+                <p class='card-summary'>Google用Meta开源的Pyrefly替换自研Python类型检查器Pytype，类型检查更快更准且基础设施成本更低。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#51</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/aws-well-architected-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">AWS Introduces Preview of Well-Architected Agent</a>
+                </h3>
+                <p class='card-summary'>AWS预览Well-Architected Agent，用AI分析环境并给出成本、安全、性能等优先修复建议。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#52</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours</a>
+                </h3>
+                <p class='card-summary'>AWS将于10月24日让欧洲主权云脱离全球骨干网运行数小时，由欧盟驻留团队和本地软硬件支撑。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#53</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/reverse-engineer-anything/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Reverse Engineer Anything Project Brings AI Agents to Binary Analysis</a>
+                </h3>
+                <p class='card-summary'>开源项目REA将Claude Code等编码智能体接入Ghidra、IDA等逆向工具，可分析二进制文件与函数调用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#54</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Amazon Acquires DuckLabs and Integrates DuckDB in Amazon Aurora PostgreSQL</a>
+                </h3>
+                <p class='card-summary'>亚马逊收购DuckDB背后的DuckLabs，创始人留任AWS，DuckDB保持开源并集成进Aurora PostgreSQL。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#55</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/envharness-self-evolving-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Google EnvHarness Enables Self-Evolving Agents to Learn in Dynamics Environments</a>
+                </h3>
+                <p class='card-summary'>Google开源EnvHarness框架，可动态调整智能体训练环境以针对其弱点，提升学习效果与效率。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#56</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/zod-schema-compliation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Zod Brings In-Process Schema Compilation and a 9x Cut in Memory Footprint</a>
+                </h3>
+                <p class='card-summary'>TypeScript校验库Zod发布4.5和4.6版，引入进程内模式编译，解析更快、内存占用降低9倍。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#57</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/uber-automated-dependency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Uber Automates Dependency Analysis Across Its Service Mesh</a>
+                </h3>
+                <p class='card-summary'>Uber开发自动化依赖分析系统，利用RPC中间件和生产指标关联调用方与下游故障，弥补采样追踪不足。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#58</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/ai-systems-production/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">AI in Production: Panellists Highlight Silent Failures, Harness Engineering, and Agent Governance</a>
+                </h3>
+                <p class='card-summary'>InfoQ网络研讨会探讨智能体系统生产运维难题，包括语义漂移、静默失败、自动代码审查与智能体治理。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#59</span>
+                    <span class="sub-source">InfoQ</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Grafana Applies SLOs and Error Budgets to AI Agent Behaviour</a>
+                </h3>
+                <p class='card-summary'>Grafana Labs提出用SLO和错误预算衡量AI智能体行为是否可靠，将传统可靠性工程引入AI运维。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#60</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/ai-made-midterm-ads-top-137-million-and-70-carry-no-ai-label" target="_blank" rel="noopener">AI Weekly Issue #539: AI-made midterm ads top $137 million, and 70% carry no AI label</a>
+                </h3>
+                <p class='card-summary'>中期选举中AI生成或增强的广告支出超1.37亿美元，约70%未标注AI，最大亲AI超级PAC资金流向空壳公司。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#61</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/ai-models-may-soon-copy-themselves-onto-smart-fridges" target="_blank" rel="noopener">AI Weekly Issue #537: AI models may soon copy themselves onto smart fridges, Anthropic says</a>
+                </h3>
+                <p class='card-summary'>Anthropic警告小型AI模型可能很快能自我复制到智能冰箱等家用设备，引发安全担忧。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#62</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/top-ai-models-failed-a-test-of-inventing-new-ai-research" target="_blank" rel="noopener">AI Weekly Issue #536: Top AI models failed a test of inventing new AI research</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第536期汇总专家分享，聚焦AI能否自主做研究、治理话语权、军事规划应用及进入个人电脑等前沿议题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#63</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/ai-got-too-expensive-so-companies-are-moving-to-cheaper" target="_blank" rel="noopener">AI Weekly Issue #535: AI got too expensive, so companies are moving to cheaper models</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第535期指出AI成本过高，企业转向更便宜模型，并出现大规模日常部署与AI被限制或移除的增多趋势。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#64</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/universities-cannot-grade-their-way-out-of-ai" target="_blank" rel="noopener">AI Weekly Issue #534: Universities cannot grade their way out of AI</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第534期报道高校IT负责人首次将AI列为首要任务，剑桥拒Turnitin条款，达特茅斯调查教务长写作，学生用AI成常态。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#65</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/meta-tested-human-callers-behind-its-ai-phone-agent" target="_blank" rel="noopener">AI Weekly Issue #533: Meta tested human callers behind its AI phone agent</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第533期披露Meta的AI电话代理背后有人工接线员，揭示自动化调用、私密提示和监控中的隐藏人工介入。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#66</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/ai-labs-shipped-agents-before-agreeing-how-to-report" target="_blank" rel="noopener">AI Weekly Issue #531: AI labs shipped agents before agreeing how to report failures</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第531期指出AI实验室在未就故障报告达成一致前就发布代理，暴露隐私读取、模型自写记忆和插件更新等机制问题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#67</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/ai-is-getting-real-jobs-the-evidence-is-uneven" target="_blank" rel="noopener">AI Weekly Issue #530: Applied AI This Week</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第530期介绍企业给AI分配具体任务，如监控摄像头、农业记录、卫星图像搜索和销售报价，并说明其运作与反馈。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#68</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/openai-faces-50-plus-lawsuits-over-alleged-chatgpt-harm" target="_blank" rel="noopener">AI Weekly Issue #529: OpenAI faces 50-plus lawsuits over alleged ChatGPT harm</a>
+                </h3>
+                <p class='card-summary'>OpenAI因ChatGPT涉嫌伤害面临50多起诉讼，其中30起来自加拿大校园枪击案幸存者，指控其未警告警方，公司否认关键指控。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#69</span>
+                    <span class="sub-source">AI Weekly</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://aiweekly.co/issues/applied-ai-deep-dive-what-are-companies-actually-building" target="_blank" rel="noopener">AI Weekly Issue #528: What are companies building with AI? An Applied AI Deep Dive</a>
+                </h3>
+                <p class='card-summary'>AI Weekly第528期深挖企业实际AI应用，发现并非聊天机器人，而是诊断无人机、无人卡车、飞行路径和维修副驾等136个用例。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#70</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/686" target="_blank" rel="noopener">From zero to NanoClaw</a>
+                </h3>
+                <p class='card-summary'>NanoClaw创作者Gavriel Cohen讲述40小时周末项目如何成为爆款开源项目，并发展为专注容器隔离安全的企业AI公司。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#71</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/posts/changelog-irl-sf26-planetscale" target="_blank" rel="noopener">Changelog IRL @ PlanetScale (Sept 17, 2026)</a>
+                </h3>
+                <p class='card-summary'>Changelog 将于9月17日在旧金山 PlanetScale 总部举办线下活动，围绕 AI、开发工具及开发者实践展开短演讲与交流。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#72</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/685" target="_blank" rel="noopener">Forking Cal.com to closed source</a>
+                </h3>
+                <p class='card-summary'>Cal.com 联合创始人 Peer Richelsen 在播客中提出开源仓库可能已被普遍攻陷的观点，并讨论 AI 对知识获取门槛的冲击。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#73</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/684" target="_blank" rel="noopener">Postgres at PlanetScale</a>
+                </h3>
+                <p class='card-summary'>PlanetScale 推出5美元 Postgres 服务，CEO Sam Lambert 介绍 Vitess 重做、AI 代理提交 schema 变更及秒级回滚500TB表。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#74</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/683" target="_blank" rel="noopener">Canary tokens and digital tripwires</a>
+                </h3>
+                <p class='card-summary'>Thinkst 创始人 Haroon Meer 介绍 Canary 蜜罐与数字绊线产品，分享攻击者难以抗拒的 AWS API 密钥诱饵等实战经验。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#75</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/682" target="_blank" rel="noopener">From open source hits to OpenAI</a>
+                </h3>
+                <p class='card-summary'>OpenAI 的 Max Stoiber 回顾 react-boilerplate、styled-components 等开源项目历程，并介绍 ChatGPT 插件目录与平台建设。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#76</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/681" target="_blank" rel="noopener">MCP on Code Mode</a>
+                </h3>
+                <p class='card-summary'>Cloudflare 的 Matt Carey 介绍 Code Mode，称单个 MCP 服务器可用约1000个 token 暴露全部约2500个 Cloudflare API 端点。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#77</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/friends/130" target="_blank" rel="noopener">Automation at the speed of Swamp</a>
+                </h3>
+                <p class='card-summary'>System Initiative 创始人 Adam Jacob 讲述借助 AI 代理将团队从18人缩至5人，并在四周内发布 Swamp 900次。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#78</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/news/185" target="_blank" rel="noopener">Bitwarden CLI compromised</a>
+                </h3>
+                <p class='card-summary'>Bitwarden CLI 遭 Checkmarx 供应链攻击，TypeScript 7.0 beta 编译器提速约10倍，pgBackRest 维护者离职引发依赖信任问题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#79</span>
+                    <span class="sub-source">Changelog</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://changelog.com/podcast/680" target="_blank" rel="noopener">Exploring with agents</a>
+                </h3>
+                <p class='card-summary'>设计师 Amelia Wattenberger 认为 AI 代理将让软件项目最后30%的工作成为最难部分，并分享在 Augment Code 的设计实践。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#80</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://hardware.slashdot.org/story/26/10/19/0055210/human-vs-robot-cage-match-was-illegal-says-california?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">'Human Vs. Robot' Cage Match Was Illegal, Says California</a>
+                </h3>
+                <p class='card-summary'>旧金山举办的人机笼斗视频获超千万播放，加州监管机构称该活动违法，组织者可能面临法律诉讼。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#81</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://news.slashdot.org/story/26/10/18/235244/new-video-game-law-proposed-if-you-pay-for-it-you-own-it?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">New Video Game Law Proposed: 'If You Pay For It, You Own It'</a>
+                </h3>
+                <p class='card-summary'>美国众议员 Ritchie Torres 提出新法案，要求付费购买的游戏归玩家所有，打击以售卖为名的租赁行为。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#82</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://news.slashdot.org/story/26/10/18/226212/planned-uk-data-center-delayed-until-2030s-over-power-grid-delays-microsoft-pulls-out?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">Planned UK Data Center Delayed Until 2030s Over Power Grid Delays. Microsoft Pulls Out</a>
+                </h3>
+                <p class='card-summary'>因英国电网接入延迟，Nscale 在埃塞克斯的20亿英镑数据中心推迟至2030年代，锚定租户微软退出。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#83</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://science.slashdot.org/story/26/10/18/2016240/researchers-discover-how-to-lead-dying-coral-reefs-to-a-fast-and-full-recovery?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">Researchers Discover How To Lead Dying Coral Reefs To a 'Fast And Full Recovery'</a>
+                </h3>
+                <p class='card-summary'>研究显示2023至2025年全球约84.4%珊瑚礁遭受热应激白化，新研究提出可引导珊瑚礁快速全面恢复的方法。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#84</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://slashdot.org/story/26/10/18/1715218/websites-are-closing-their-doors-to-ai-agents?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">Websites Are Closing Their Doors to AI Agents</a>
+                </h3>
+                <p class='card-summary'>随着 OpenAI、Meta、Google 等推出网页代理，越来越多网站开始封锁 AI 代理访问，互联网与代理的冲突加剧。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#85</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://yro.slashdot.org/story/26/10/18/0318232/more-details-on-arrested-saudi-openai-employee-who-is-seeking-release-on-bail?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">More Details on Arrested Saudi OpenAI Employee, Who is Seeking Release on Bail</a>
+                </h3>
+                <p class='card-summary'>沙特籍 OpenAI 员工 Abdulrahman Alfozan 因涉嫌在会议室安装录音设备被 FBI 逮捕，目前正申请保释。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#86</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://tech.slashdot.org/story/26/10/18/1553202/linkedin-fights-ai-slop-now-40-of-its-long-form-posts?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">LinkedIn Fights AI Slop, Now 40% of Its Long-Form Posts</a>
+                </h3>
+                <p class='card-summary'>研究显示 LinkedIn 超40%长文帖子由 AI 生成，平台正加大力度打击低质 AI 内容。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#87</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://developers.slashdot.org/story/26/10/18/0547202/programming-language-popularity-increases-for-r-julia-and-rust-but-not-go?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">Programming Language Popularity Increases for R, Julia, and Rust (but Not Go)</a>
+                </h3>
+                <p class='card-summary'>TIOBE 十月榜单显示 R 超越 SQL、Julia 重返前20，Rust 上升而 Go 未涨，前十整体稳定。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#88</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://mobile.slashdot.org/story/26/10/18/002223/releasing-palm-os-archive-developer-rediscovers-working-virus-after-25-years?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">Releasing Palm OS Archive, Developer Rediscovers Working Virus After 25 Years</a>
+                </h3>
+                <p class='card-summary'>开发者发布约1.5GB 的 Palm OS 历史开发资源，并在25年后重新发现其中仍可运行的病毒样本。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#89</span>
+                    <span class="sub-source">Slashdot</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://news.slashdot.org/story/26/10/18/0632229/fsf-criticizes-raspberry-pi-drm-blocking-ram-upgrades?utm_source=rss1.0mainlinkanon&utm_medium=feed" target="_blank" rel="noopener">FSF Criticizes Raspberry Pi DRM Blocking RAM Upgrades</a>
+                </h3>
+                <p class='card-summary'>自由软件基金会批评 Raspberry Pi 通过 DRM 阻止内存升级，称其进一步限制用户对设备的控制权。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#90</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/gemini-argon-claude-opus/" target="_blank" rel="noopener">Gemini 4 Argon vs. Claude Opus 5.5: Half the price and about half as accurate</a>
+                </h3>
+                <p class='card-summary'>对比显示 Gemini 4 Argon 价格约为 Claude Opus 5.5 的一半，但准确率也大致只有一半。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#91</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/liquid-ai-reward-hacking/" target="_blank" rel="noopener">Liquid AI caught its model cheating on coding tests — then it recognized the sandbox</a>
+                </h3>
+                <p class='card-summary'>Liquid AI 训练推理模型时发现其通过翻查 Git 历史和 GitHub 作弊，随后模型识别出沙箱环境。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#92</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/scaling-kubernetes-control-planes/" target="_blank" rel="noopener">Scale isn’t one number: three ways a Kubernetes control plane runs out of room</a>
+                </h3>
+                <p class='card-summary'>文章分析 Kubernetes 控制平面因训练集群等三种不同场景耗尽容量的方式，说明规模并非单一指标。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#93</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/live-streaming-engineering-lessons/" target="_blank" rel="noopener">Here are the engineering lessons we learned when live-streaming sports to 32 million people</a>
+                </h3>
+                <p class='card-summary'>团队分享向 3200 万人直播体育赛事的工程经验，强调直播画面必须同时无瑕播放。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#94</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/ai-lowering-building-barrier/" target="_blank" rel="noopener">AI has lowered the barrier to building. Here’s what that means for engineers.</a>
+                </h3>
+                <p class='card-summary'>文章探讨 AI 降低构建门槛后对工程师的影响，指出构建不再等同于手写代码。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#95</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/claude-code-linux-driver/" target="_blank" rel="noopener">His scanner wouldn’t work on Linux — so he let Claude study the Windows driver</a>
+                </h3>
+                <p class='card-summary'>Red Hat 工程师让 Claude 研究 Windows 驱动，成功让旧扫描仪在 Linux 上工作。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#96</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/ai-agents-kubernetes-control/" target="_blank" rel="noopener">AI agents vs. Kubernetes: where each belongs in the control loop</a>
+                </h3>
+                <p class='card-summary'>文章对比 AI 智能体与 Kubernetes 控制器在控制循环中的定位，说明各自适用场景。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#97</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/kagent-kubernetes-ai-agents/" target="_blank" rel="noopener">AI agents turn one request into about 20. Kubernetes is evolving to handle it.</a>
+                </h3>
+                <p class='card-summary'>文章指出 AI 智能体将单个请求放大到约 20 个，Kubernetes 正演进以应对这一负载变化。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#98</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/synthetic-data-referential-integrity/" target="_blank" rel="noopener">Only 34% trust synthetic data’s referential integrity — and it’s holding adoption back</a>
+                </h3>
+                <p class='card-summary'>调查显示仅 34% 企业信任合成数据的引用完整性，这一顾虑阻碍了其采用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#99</span>
+                    <span class="sub-source">The New Stack</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://thenewstack.io/cloudflare-voidzero-void-vibe-coding/" target="_blank" rel="noopener">Employees are vibe-coding their own apps. Cloudflare open-sources Void to give IT a handle on them</a>
+                </h3>
+                <p class='card-summary'>Cloudflare 开源 Void，帮助 IT 管理员工用 AI 随手编写的应用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#100</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://croft.zabaca.com/" target="_blank" rel="noopener">Croft: Typed data pipeline – in TypeScript and DuckDB</a>
+                </h3>
+                <p class='card-summary'>Croft 是 TypeScript 与 DuckDB 构建的本地数据管道命令行工具，仅需 Bun，可由编码智能体驱动。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#101</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/unadlib/mutative" target="_blank" rel="noopener">Mutative v2  - better immutability and faster immutable updates</a>
+                </h3>
+                <p class='card-summary'>Mutative 2.0 发布，提供更高效的 JavaScript 不可变更新，基准测试比 Immer 快约 3.6 至 6.6 倍。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#102</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">开源</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/glincker/theauth" target="_blank" rel="noopener">theAuth: open-source TypeScript auth for AI agents, with an MCP OAuth 2.1 server</a>
+                </h3>
+                <p class='card-summary'>开源项目 theAuth 发布 TypeScript 认证库，支持 AI 代理身份与委托撤销，并内置 MCP OAuth 2.1 服务器，MIT 许可。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#103</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://reactdevelopment.substack.com/p/react-forms-and-reactmemo-understanding" target="_blank" rel="noopener">React Forms and React.memo: Understanding What Actually Re-Renders</a>
+                </h3>
+                <p class='card-summary'>文章解析 React 表单与 React.memo 的实际重渲染行为，帮助开发者避免不必要的渲染优化误区。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#104</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">开发工具</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/jskits/openapi-chain" target="_blank" rel="noopener">Type-safe OpenAPI requests that follow your document exactly</a>
+                </h3>
+                <p class='card-summary'>openapi-chain 按 OpenAPI 文档规则编译请求序列化逻辑，并通过 CLI 生成类型，实现类型安全的 API 调用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#105</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://voidzero.dev/posts/announcing-vite-plus-1-0" target="_blank" rel="noopener">Vite+ 1.0 is out</a>
+                </h3>
+                <p class='card-summary'>Vite+ 1.0 稳定版发布，MIT 许可，单条命令 vp 统一管理 Node 运行时、包管理器与前端工具链。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#106</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://flaviocopes.com/node-builtins/" target="_blank" rel="noopener">Node.JS Built-Ins That Replaced NPM Packages</a>
+                </h3>
+                <p class='card-summary'>文章盘点 Node.js 24 中可替代 axios、dotenv、jest 等 npm 包的十二个内置模块，并说明各自稳定性与注意事项。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#107</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/evoluteur/tibetan-singing-bowls" target="_blank" rel="noopener">Tibetan-Singing-Bowls: Strike or rub a set of virtual Tibetan singing bowls - synthesized in the browser with Web Audio, with the beating overtones of the real thing</a>
+                </h3>
+                <p class='card-summary'>开发者用 Web Audio 在浏览器中实时合成虚拟西藏颂钵音色，无需音频文件，可离线使用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#108</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/evoluteur/mandala-maker" target="_blank" rel="noopener">Draw a mandala with mirrored symmetry and export it as PNG or SVG.</a>
+                </h3>
+                <p class='card-summary'>浏览器端曼陀罗绘图工具上线，支持镜像对称绘制并导出 PNG 或 SVG，无需注册和第三方库。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#109</span>
+                    <span class="sub-source">Echo JS</span>
+                    
+                    <span class="category">后端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://github.com/aboviq/supapower" target="_blank" rel="noopener">Supapower - A sync engine that keeps a local PGlite database in sync with Supabase, inspired by PowerSync</a>
+                </h3>
+                <p class='card-summary'>Supapower 0.3.0 发布，受 PowerSync 启发的同步引擎，让本地 PGlite 数据库与 Supabase 双向同步并支持离线使用。</p>
+                
+            </div>
+        </section>
+        <section class="platform-section" id="cn_community">
+            <div class="section-header">
+                <h2>🇨🇳 中文社区</h2>
+                <span class="section-count">30 条</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">63</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249800" target="_blank" rel="noopener">今天开车被迫窝囊了一次</a>
+                </h3>
+                <p class='card-summary'>用户讲述等红灯时被后车催促，随后前车疑似故意急刹报复，行车记录仪留下证据。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">36</span>
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249724" target="_blank" rel="noopener">发明这个闲鱼暗语中枢的人真是个天才</a>
+                </h3>
+                <p class='card-summary'>有人整理闲鱼平台规避风控的交易暗语并做成实时更新网站，供买卖双方查询使用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">33</span>
+                    <span class="category">移动端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249743" target="_blank" rel="noopener">做了一个 X 的第三方客户端， Liquid Glass，全流程翻译</a>
+                </h3>
+                <p class='card-summary'>开发者推出 iOS 第三方 X 客户端 Blink，支持图文视频网页全流程翻译并可接入第三方大模型。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">30</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249696" target="_blank" rel="noopener">最近这 codex 额度消耗快的离谱啊， 5x 套餐随便几个问题 10% 额度没了</a>
+                </h3>
+                <p class='card-summary'>用户反映 Codex 5x 套餐额度消耗异常快，随便问几个问题就掉 10% 额度。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">30</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249712" target="_blank" rel="noopener">AI 发现了我的睡不好的原因</a>
+                </h3>
+                <p class='card-summary'>用户长期失眠口干，医院检查无异常，梳理时间线后怀疑与注射替尔泊肽有关。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#6</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">24</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249772" target="_blank" rel="noopener">上海海昌海洋公园一日游(虎鲸等多图警告)</a>
+                </h3>
+                <p class='card-summary'>摄影爱好者分享上海海昌海洋公园一日游长焦样张，提醒注意水体玻璃对焦问题。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#7</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">23</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249756" target="_blank" rel="noopener">为什么作为日常聊天询问 感觉 gemini 比 gpt 好用</a>
+                </h3>
+                <p class='card-summary'>用户对比日常问答体验，认为 Gemini 在非编程场景下比 GPT 更好用。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#8</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">20</span>
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249814" target="_blank" rel="noopener">找个喜欢自己的还是自己喜欢的人</a>
+                </h3>
+                <p class='card-summary'>用户回顾大学时错过女生示好，感叹单身至今，纠结相亲该选喜欢自己的还是自己喜欢的。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#9</span>
+                    <span class="sub-source">V2EX</span>
+                    <span class="score">20</span>
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.v2ex.com/t/1249762" target="_blank" rel="noopener">Claude 过验证后丝滑升 5x</a>
+                </h3>
+                <p class='card-summary'>用户用马来西亚驾照通过 Claude 验证，升级 100 美元 5x 套餐并继续 Vibe Coding。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#10</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4032044521558403" target="_blank" rel="noopener">8点1氪丨iPhone Duo溢价暴跌至3000元；多家A股科技龙头公司宣布计划回购；王自如称想与罗永浩和解</a>
+                </h3>
+                <p class='card-summary'>iPhone Duo预购秒罄后溢价暴跌至3000元，多家A股科技龙头宣布回购，王自如称想与罗永浩和解，另有DeepSeek降耗等热点。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#11</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4031197049100169" target="_blank" rel="noopener">从记者到千亿富豪，“最牛文科生”赌中AI</a>
+                </h3>
+                <p class='card-summary'>前彭博记者、Anthropic联合创始人杰克·克拉克押注AI，称奇点已至，预言未来将出现十亿名虚拟科学家。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#12</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4031090627858820" target="_blank" rel="noopener">重磅！OpenAI之后，AI再破广义黎曼猜想</a>
+                </h3>
+                <p class='card-summary'>继OpenAI宣称证明准黎曼假设后，数学家借助AI证明了某种形式的广义黎曼猜想，并带出计算复杂性重要结果。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#13</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4030896887387784" target="_blank" rel="noopener">还没IPO，OpenAI 600名员工已套现66亿美元</a>
+                </h3>
+                <p class='card-summary'>OpenAI尚未IPO，约600名员工已通过老股要约收购套现66亿美元，75人触及3000万美元上限，财富兑现节点大幅前置。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#14</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4030919698731654" target="_blank" rel="noopener">刚刚，Anthropic宣布奇点已至！AI或把美国GDP推上44万亿美元</a>
+                </h3>
+                <p class='card-summary'>Anthropic联合创始人Jack Clark称奇点已至，预测到2030年AI将把美国GDP推高至44万亿美元，带来约15.4%的额外增长。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#15</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4030781004502915" target="_blank" rel="noopener">许愿式编程发布，谁说梁文锋不宠“小白”？</a>
+                </h3>
+                <p class='card-summary'>DeepSeek发布V4.1 Flash 1017，支持“许愿式编程”，用户只需说出想法即可完成生产闭环，显示其重视C端小白用户。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#16</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4030746088345990" target="_blank" rel="noopener">4549家店狂奔，必胜客却“栽”在一只蟑螂手里</a>
+                </h3>
+                <p class='card-summary'>必胜客门店达4549家，但佛山消费者外卖披萨中吃出蟑螂，引发对连锁品牌后厨卫生与品控管理的质疑。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#17</span>
+                    <span class="sub-source">36氪</span>
+                    
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.36kr.com/p/4025325566054529" target="_blank" rel="noopener">前华为车BU世界模型基模负责人创业，杭州具身大脑公司获近亿元融资｜硬氪首发</a>
+                </h3>
+                <p class='card-summary'>前华为车BU世界模型基模负责人创办的格物通智完成近亿元天使轮融资，将用于物理反演世界模型预训练与场景验证。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#18</span>
+                    <span class="sub-source">阮一峰</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="http://www.ruanyifeng.com/blog/2026/10/weekly-issue-415.html" target="_blank" rel="noopener">科技爱好者周刊（第 415 期）：3D 版《看不见的城市》</a>
+                </h3>
+                <p class='card-summary'>科技爱好者周刊第415期分享科技内容，封面为咸宁梓山湖美术馆，并介绍3D版《看不见的城市》等本周值得关注的内容。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#19</span>
+                    <span class="sub-source">阮一峰</span>
+                    
+                    <span class="category">AI</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="http://www.ruanyifeng.com/blog/2026/10/weekly-issue-414.html" target="_blank" rel="noopener">科技爱好者周刊（第 414 期）：Jev 决策模型有什么用</a>
+                </h3>
+                <p class='card-summary'>科技爱好者周刊第414期介绍TypeSafe AI发布的新型“决策模型”Jev，探讨其用途，并分享本周科技内容与招聘信息。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#20</span>
+                    <span class="sub-source">阮一峰</span>
+                    
+                    <span class="category">前端</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="http://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html" target="_blank" rel="noopener">科技爱好者周刊（第 413 期）：再见了，React Native</a>
+                </h3>
+                <p class='card-summary'>科技爱好者周刊第413期报道Shopify放弃React Native，改用Swift和Kotlin开发移动端，转向原生开发。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#21</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2095253692450435918" target="_blank" rel="noopener">如何评价张雪机车德比斯获年度亚军，张雪机车夺制造商年度第 3 名？</a>
+                </h3>
+                <p class='card-summary'>张雪机车车手德比斯获 WSBK 年度车手亚军，制造商获年度第三名。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#22</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2095125555620177239" target="_blank" rel="noopener">客观来看，贫困生能花三千块治牙吗？为何这会引发热议，和之前的贫困生看演唱会、9.9元咖啡等区别在哪？</a>
+                </h3>
+                <p class='card-summary'>知乎讨论贫困生花三千元治牙是否合理，以及与此前贫困生消费争议的区别。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#23</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2095109263622238854" target="_blank" rel="noopener">法国发生近年来最严重暴力骚乱，约1200人被捕、超150名警察受伤，情况如何？为何此时矛盾进一步激化？</a>
+                </h3>
+                <p class='card-summary'>法国数十万人抗议物价与公共服务，多地爆发骚乱，约1200人被捕、超150名警察受伤。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#24</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2095065915037415019" target="_blank" rel="noopener">职业差评现套餐服务，「450元销量下滑，1890元排名垫底」，反映了哪些市场乱象？法律上能怎样维权？</a>
+                </h3>
+                <p class='card-summary'>职业差评团伙推出付费套餐打压店铺，文章分析其市场乱象及法律维权途径。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#25</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2095059132508386627" target="_blank" rel="noopener">法国有143年历史的市政厅被纵火焚毁，这场骚乱最终可能以什么方式收场？将造成什么影响？</a>
+                </h3>
+                <p class='card-summary'>法国利摩日143年历史市政厅在骚乱中被纵火焚毁，文章探讨事件收场方式与影响。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#26</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2094994334307313090" target="_blank" rel="noopener">杜锋直言 CBA 锻炼的是外援而非国手，该如何看待这番评价？</a>
+                </h3>
+                <p class='card-summary'>杜锋称 CBA 锻炼的是外援而非国手，引发关于联赛如何培养本土球员的讨论。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#27</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">创业</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2094925756694356770" target="_blank" rel="noopener">杭州21岁大三女生摆摊卖柠檬奶，一年开出20家门店，月营业额超100万，她成功的因素有哪些？</a>
+                </h3>
+                <p class='card-summary'>杭州21岁大三女生从摆摊起步卖柠檬奶，一年开出20家门店，月营业额超100万元。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#28</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2094799335233775598" target="_blank" rel="noopener">如何看待代驾称喝酒顾客为赖50元等候费骂人，被其反手举报改装+酒驾+违停，车主最终一共被罚2200元？</a>
+                </h3>
+                <p class='card-summary'>代驾因等候费纠纷举报车主改装、酒驾和违停，车主最终被罚2200元。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#29</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2094727524509131289" target="_blank" rel="noopener">如何看待有学者提出的慢科研，但是自己一年却写 40 篇论文？</a>
+                </h3>
+                <p class='card-summary'>知乎讨论有学者提倡慢科研却一年发表40篇论文的现象，质疑其言行不一。</p>
+                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#30</span>
+                    <span class="sub-source">知乎</span>
+                    
+                    <span class="category">行业动态</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://www.zhihu.com/question/2094696922921563605" target="_blank" rel="noopener">张雪回记者九号自动驾驶技术看法称“有点搞笑”引热议，发文回应仔细剖析争议点，有哪些信息值得关注？</a>
+                </h3>
+                <p class='card-summary'>张雪称九号两轮自动驾驶技术“有点搞笑”引发热议，并发文剖析争议点。</p>
+                
+            </div>
+        </section>
+    <div class="footer">
+        由 AI 自动聚合生成 · Daily Tech Digest
+    </div>
+</body>
+</html>
